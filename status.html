@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Status avatatnoel.es</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #111827;
+    }
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .status-container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .service, .incident {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .status {
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .online {
+      background-color: #d1fae5;
+      color: #065f46;
+    }
+    .offline {
+      background-color: #fee2e2;
+      color: #991b1b;
+    }
+    .degraded {
+      background-color: #fef3c7;
+      color: #92400e;
+    }
+    .incidents-section {
+      margin-top: 50px;
+    }
+    .incident-entry {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .incident-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .incident-time {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    .note {
+      font-size: 14px;
+      color: #374151;
+      background-color: #f3f4f6;
+      padding: 10px;
+      border-left: 4px solid #3b82f6;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>avatatnoel.es</h1>
+  </header>
+    <!-- Inicio de sección de estado de servicios. -->
+  <div class="status-container">
+    <div class="service">
+      <span>API Principal</span>
+      <span class="status online">Online</span>
+    </div>
+    <div class="service">
+      <span>Autenticación</span>
+      <span class="status online">Online</span>
+    </div>
+    <div class="service">
+      <span>Base de Datos</span>
+      <span class="status offline">Offline</span>
+    </div>
+    <div class="service">
+      <span>Web Frontend</span>
+      <span class="status online">Online</span>
+    </div>
+    <!-- Inicio de sección de errores recientes. -->
+    <div class="incidents-section">
+      <h2>Errores Recientes</h2>
+
+      <div class="incident-entry">
+        <div class="incident-details">
+          <strong>Falla en la Base de Datos</strong>
+          <span class="status offline">Crítico</span>
+        </div>
+        <div class="incident-time">27 de abril, 12:14 PM - Resuelto</div>
+        <div class="note">
+          El sistema de base de datos dejó de responder debido a una sobrecarga inesperada. Hemos migrado temporalmente a un nodo de respaldo mientras investigamos el problema raíz.
+        </div>
+      </div>
+
+      <div class="incident-entry">
+        <div class="incident-details">
+          <strong>Problemas de inicio de sesión</strong>
+          <span class="status degraded">Intermitente</span>
+        </div>
+        <div class="incident-time">26 de abril, 8:50 AM - Mitigado</div>
+        <div class="note">
+          Identificamos un error en el servicio de autenticación que causaba fallas intermitentes al iniciar sesión. Se aplicó un parche temporal mientras trabajamos en una solución definitiva.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+     · Última actualización: Abril 2025
+  </footer>
+</body>
+</html>
