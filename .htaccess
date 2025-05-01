@@ -1,6 +1,6 @@
-ErrorDocument 404 http://avatatnoel.es/error/404.php
-ErrorDocument 500 http://avatatnoel.es/error/500.php
-ErrorDocument 400 http://avatatnoel.es/error/400.php
-ErrorDocument 401 http://avatatnoel.es/error/401.php
-ErrorDocument 403 http://avatatnoel.es/error/403.php
-ErrorDocument 503 http://avatatnoel.es/error/503.php
+ErrorDocument 404 https://avatatnoel.es/error/404.php
+ErrorDocument 500 https://avatatnoel.es/error/500.php
+ErrorDocument 400 https://avatatnoel.es/error/400.php
+ErrorDocument 401 https://avatatnoel.es/error/401.php
+ErrorDocument 403 https://avatatnoel.es/error/403.php
+ErrorDocument 503 https://avatatnoel.es/error/503.php
